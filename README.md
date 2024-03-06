@@ -1,10 +1,12 @@
 # Laravel Assessment
 
-### Instructions
-1. Create a new repository in your Github account using the provided application zip.
-2. Establish an initial commit with the provided code.
-3. Complete the functional requirements below & commit these changes to your repository. Open a PR with your changes so that they can be reviewed.
-4. Share your repository with us.
+### What's New
+- Created two new tables: actors and movies, to store actor and movie information respectively.
+- Established a many-to-many relationship between actors and movies through a pivot table named actor_movies. To apply these migrations, enter the Docker container and run `php artisan migrate`.
+- Implemented corresponding Eloquent models for both Actor and Movie tables, defining the many-to-many relationship within these models. 
+- Created factory and seeder files to populate the database table with some dummy. To execute this, enter the Docker container and run `php artisan db:seed`
+- Displayed actors and their associated movies, with search functionality included. This can be viewed at: `http://localhost/actors`.
+- Implemented a new search feature utilizing the Star Wars API to search for people. It can be accessed at: `http://localhost/people`.
 
 
 ### Setup
